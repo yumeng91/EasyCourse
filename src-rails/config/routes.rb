@@ -1,6 +1,5 @@
 Easycourse::Application.routes.draw do
   get "sessions/login"
-
   get "sessions/logout"
 
   # The priority is based upon order of creation:
@@ -17,7 +16,9 @@ Easycourse::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :files
-  resources :dashboard, only: [:index]
+  resources :dashboard, only: [:index] do
+    get 'intro', on: :collection
+  end
 
   # Sample resource route with options:
   #   resources :products do

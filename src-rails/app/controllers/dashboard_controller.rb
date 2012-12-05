@@ -2,7 +2,7 @@
 class DashboardController < ApplicationController
   def index
     begin
-      redirect_to '/sessions/login'
+      redirect_to '/dashboard/intro'
       return
     end unless session[:uid]
 
@@ -21,5 +21,10 @@ class DashboardController < ApplicationController
       url: "/assets/Snip20121203_2.png"
     }
     @files = [file] * 6
+  end
+
+
+  def intro
+    render layout: 'no_nav'
   end
 end
