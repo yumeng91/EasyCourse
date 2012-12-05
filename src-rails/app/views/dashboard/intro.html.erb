@@ -4,7 +4,7 @@
       <h2 id="site-logo" class="span2">EasyCourse</h2>
       <ul id="nav-items">
         <li class="nav-action span1"><a href="">登入</a></li>
-        <li class="nav-action span1"><strong><a href="">注册</a><strong></li>
+        <li class="nav-action span1"><strong><a href="">注册</a></strong></li>
       </ul>
     </div>
     <!-- <div class="navbar-inner">
@@ -26,15 +26,47 @@
     </div> -->
   </div>
 
-  <div class="hero-unit container">
-    <!-- <div class="hero-unit">
+  <!-- <div id="landing">
+  <div class="container hero-unit">
+    <div class="row">
+      <div class="span0">hi</div>
+    </div>
+    <div class="hero-unit">
       <h1>EasyCourse
         <p><small>
           让上课变得更简单
         </small></p>
       </h1>
       <p><a class="btn btn-primary btn-large">现在登入 »</a></p>
-    </div> -->
+    </div>
+  </div>
+  </div> -->
+
+  <article class="container">
+    <div id="landing">
+      <div class="container">
+        <header class="hero-unit">
+          <h1>Title</h1>
+          <h3>Content, Content, Content</h3>
+          <p>
+            <a href="" class="btn btn-green">让上课变得更简单</a>
+          </p>
+        </header>
+      </div>
+    </div>
+  </article>
+
+  <div class="container" id="features">
+    <div class="row">
+      <% 3.times do -%>
+      <div class="span4 feature">
+        <%= image_tag '/assets/icon-one.png', class: 'feature-fig' %>
+        <h3>One Place for your links</h3>
+        <p>With Kippt it’s easy to collect all your links from apps and services. Set up syncs or use our browser extensions.</p>
+        <a href="" class="btn-more">查看详情</a>
+      </div>
+      <% end -%>
+    </div>
   </div>
 
     <!-- Example row of columns -->

@@ -64,13 +64,55 @@ a.action-btn {
     }
   }
 
-  // .hero-unit{
-  //   background-image: url("hero_unit.jpg");
-  //   color:red;
-  //   small{
-  //     color:white;
-  //   }
-  // }
+  #landing {
+    background: url(/assets/home-bg-lib.jpg) center no-repeat, url(/assets/home-bg-black.png) left repeat-x;
+    .hero-unit {
+      box-shadow: none;
+      background: none;
+      height: 324px;
+      padding: 55px 620px 0 0;
+      margin-right: -80px;
+      margin-bottom: 0;
+      color: white;
+      h1 {
+        margin-top: 60px;
+      }
+      h2 {
+        margin-top: 0px;
+        color: white;
+      }
+    }
+  }
+
+  #features {
+    margin-top: 20px;
+    .feature {
+      text-align: center;
+      h3 {
+        font-weight: 400;
+        color: #111;
+      }
+      a {
+        // display: block;
+        background-color: #ccc;
+        border-radius: 2px;
+        color: #444;
+        line-height: 18px;
+        padding: 5px 10px;
+        &:hover {
+          background-color: #E62611;
+          color: white;
+          text-decoration: none;
+        };
+      }
+    }
+  }
+
+  article.container {
+    width: auto;
+  }
+
+
   // .intro{
   //   height: 200px;
   //   width: 260px;
