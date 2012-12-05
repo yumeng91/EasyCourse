@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="row">
+		<div class="span6 offset3">
+			<div class="well">
+
+				<%= render_header '登入' %>
+				<%#= render_section_header '所有文件', '上传新文件', 'plus' %>
+
+				<%#= render :partial => "file", :collection => @files %>
+				<form class="form-signin">
+					<label>用户名：</label>
+					<input type="text" class="span5" placeholder="example:ericCode">
+					<p class="help-inline">请输入正确的用户名...</p>
+					<label>密码：<a herf="forgetPw.html">(忘记了？)</a></label>
+					<input type="text" class="span5" placeholder="请输入密码">
+					<label>用户身份：</label>
+
+					<select id="select01">
+						<option>学生</option>
+						<option>教师</option>
+						<option>网站管理员</option>
+					</select>
+					<label class="checkbox">
+						<input type="checkbox"> 记住我
+					</label>
+				
+						<button class="offset4 btn btn-primary" type="submit">登入</button>					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
