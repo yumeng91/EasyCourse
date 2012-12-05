@@ -35,6 +35,7 @@ a.action-btn {
 
 
 #intro-page {
+  background-color: white;
   margin-top: -80px;
 
   .navbar {
@@ -86,6 +87,7 @@ a.action-btn {
 
   #features {
     margin-top: 20px;
+    margin-bottom: 20px;
     .feature {
       text-align: center;
       h3 {
@@ -108,9 +110,45 @@ a.action-btn {
     }
   }
 
+  #what-others-say {
+    margin-top: 0px;
+    background: whiteSmoke;
+
+    .says {
+      padding-bottom: 40px;
+      .say {
+        .avatar {
+        }
+      }
+    }
+  }
+
+  #signup {
+    text-align: center;
+    padding: 20px 0 50px;
+  }
+
+  #footer {
+    text-align: center;
+    padding-bottom: 100px;
+    a {
+      text-decoration: none;
+      color: #777;
+    }
+  }
+
+  .container {
+    .header {
+      margin: 30px;
+      text-align: center;
+    }
+  }
+
   article.container {
     width: auto;
   }
+
+
 
 
   // .intro{

@@ -1,4 +1,5 @@
 # encoding: utf-8
+require 'faker'
 class DashboardController < ApplicationController
   def index
     begin
@@ -25,6 +26,14 @@ class DashboardController < ApplicationController
 
 
   def intro
+    say = {
+      user: {
+        name: Faker::Name.name,
+        avatar: '/assets/thumb_3f959077cac64c7b45793c743e22b7cc.jpg'
+      },
+      content: Faker::Lorem.paragraph
+    }
+    @says = [say] * 6
     render layout: 'no_nav'
   end
 end

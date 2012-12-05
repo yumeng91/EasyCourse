@@ -26,22 +26,6 @@
     </div> -->
   </div>
 
-  <!-- <div id="landing">
-  <div class="container hero-unit">
-    <div class="row">
-      <div class="span0">hi</div>
-    </div>
-    <div class="hero-unit">
-      <h1>EasyCourse
-        <p><small>
-          让上课变得更简单
-        </small></p>
-      </h1>
-      <p><a class="btn btn-primary btn-large">现在登入 »</a></p>
-    </div>
-  </div>
-  </div> -->
-
   <article class="container">
     <div id="landing">
       <div class="container">
@@ -49,7 +33,7 @@
           <h1>Title</h1>
           <h3>Content, Content, Content</h3>
           <p>
-            <a href="" class="btn btn-green">让上课变得更简单</a>
+            <a href="" class="btn btn-success">注册</a>
           </p>
         </header>
       </div>
@@ -69,38 +53,38 @@
     </div>
   </div>
 
-    <!-- Example row of columns -->
+
+  <article class="container" id="what-others-say">
     <div class="row">
-      <div class="span3 well intro">
-        <h2>管理课程</h2>
-        <p>
-         在这里，你可以更方便的管理每一节课<br><br><strong>“什么时候上课？要交什么作业？”</strong>
-         <br><br>
-         我们来告诉你<br>
+      <h3 class="header">乡亲父老怎么说</h3>
+    </div>
 
-       </p>
-     </div>
-     <div class="span3 well intro">
-      <h2>同学交流</h2>
-      <p>
-       你还在厌烦<strong>QQ群的吵闹</strong>却又担心<strong>错过什么通知</stong>么？
-       <br><br>
-       在这里，我们只说最重要的
-     </p>
+    <div class="container says">
+      <div class="row">
+        <%= render :partial => "say", :collection => @says %>
+      </div>
+    </div>
+  </article>
 
-   </div>
-   <div class="span3 well intro">
-    <h2>资源共享</h2>
-    <p>
-      有作业答案了！有作业模板了！有考试资料了！有往年试卷了！<br><br>
-      你还不知道？<br><br>
-      来这里找吧
-    </p>
+  <div class="container" id="signup">
+    <div class="row">
+      <h3 class="header">
+        还不快...
+      </h3>
+      <a href="" class="btn btn-success">注册</a>
+    </div>
   </div>
-</div>
 
-<hr>
 
-</div>
+  <div class="container" id="footer">
+    <hr>
+    <div class="row">
+      <a class="span2">关于我们</a>
+      <a class="span2">开发与API</a>
+      <a class="span2">隐私协议</a>
+      <a class="span2">联系我们</a>
+      <a class="span3">Made by <em>ChicCode</em> with ❤</a>
+    </div>
 
+  </div>
 </div>
