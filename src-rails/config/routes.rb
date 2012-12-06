@@ -1,4 +1,6 @@
 Easycourse::Application.routes.draw do
+  devise_for :users
+
   get "sessions/login"
   get "sessions/logout"
 

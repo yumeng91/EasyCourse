@@ -43,3 +43,6 @@ gem 'rb-fsevent'
 
 # gem 'thin'
 gem 'faker'
+
+
+gem 'devise'
