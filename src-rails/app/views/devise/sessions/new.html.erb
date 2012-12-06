@@ -6,7 +6,7 @@
         <%= render_header '登入' %>
 
         <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :class => 'form-signin') do |f| %>
-          <%= f.label :email, '用户名:' %>
+          <%= f.label :email, '邮箱:' %>
           <%= f.email_field :email, :class => 'span5', :placeholder => "example@example.com" %>
           <%= f.label :password, '密码：' %>
           <%= f.password_field :password, :class => 'span5' %>
