@@ -1,0 +1,238 @@
+<head>
+	<title>后台部分接口说明接口说明</title>
+	<style>
+		.important{color:red}
+		</style>
+	</head>
+<body>
+	<div class="d1">
+		<h1>user</h1>
+		<div class="d2">
+			<h3>userController</h3>
+			<table border="1">
+			<tr>
+				<th>URL</th>
+				<th>method</th>
+				<th>参数</th>
+				<th>变量</th>
+				<th>备注</th>
+				</tr>
+			<tr>
+				<td>/user/index</td>
+				<td></td>
+				<td></td>
+				<td>info{name,sex,grade},groups{name,ID,description}</td>
+				<td class="important">显示某人的个人信息及加入的小组（前端实现）</td>
+				</tr>
+			<tr>
+				<td>/user/reg</td>
+				<td>POST</td>
+				<td>name,password,sex,grade</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/user/reg</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="important">注册页面（前端实现）</td>
+				</tr>
+			<tr>
+				<td>/user/pwdEdit</td>
+				<td>POST</td>
+				<td>oldpwd,newpwd</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/user/pwdEdit</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="important">修改密码页面（前端实现）</td>
+				</tr>
+			<tr>
+				<td>/user/edit</td>
+				<td>POST</td>
+				<td>name,sex,grade</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/user/edit</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="important">修改个人信息页面（前端实现）</td>
+				</tr>
+			
+			</table>
+			</div>
+		</div>
+	<div class="d1">
+		<h1>group</h1>
+		<div class="d2">
+			<h3>groupController</h3>
+			<table border="1">
+			<tr>
+				<th>URL</th>
+				<th>method</th>
+				<th>参数</th>
+				<th>变量</th>
+				<th>备注</th>
+				</tr>
+			<tr>
+				<td>/group/index</td>
+				<td>GET</td>
+				<td>groupID</td>
+				<td>groupName,courseNumber,description</td>
+				<td class="important">显示某个group的页面（前端实现页面），失败返回error页面</td>
+				</tr>
+			<tr>
+				<td>/group/members</td>
+				<td>GET</td>
+				<td>groupID</td>
+				<td>groupName,courseNumber,description,members{ID,name}</td>
+				<td class="important">显示某个group的成员（前端实现页面），失败返回error页面</td>
+				</tr>
+			<tr>
+				<td>/group/subGroups</td>
+				<td></td>
+				<td></td>
+				<td>subGroups{name,ID,description}</td>
+				<td class="important">显示某个小组的子小组（即课程下面的小组）（前端实现）</td>
+				</tr>
+			<tr>
+				<td>/group/add</td>
+				<td>POST</td>
+				<td>groupName,courseNumber(课程ID),description</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/group/add</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="important">添加小组页面，前端实现</td>
+				</tr>
+			<tr>
+				<td>/group/del</td>
+				<td>POST</td>
+				<td>groupID</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/group/newAdmin</td>
+				<td>POST</td>
+				<td>groupID,UserID</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/group/edit</td>
+				<td>POST</td>
+				<td>groupID,groupName,description</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/group/edit</td>
+				<td></td>
+				<td></td>
+				<td>groupName,groupID,description</td>
+				<td class="important">修改小组信息，前端实现</td>
+				</tr>
+			<tr>
+				<td>/group/newMember</td>
+				<td>POST</td>
+				<td>groupID,newMember1,newMember2,...,Counts</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/group/delMember</td>
+				<td>POST</td>
+				<td>groupID,member</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	<div class="d1">
+		<h1>session</h1>
+		<div class="d2">
+			<h3>sessionController</h3>
+			<table border="1">
+			<tr>
+				<th>name</th>
+				<th>method</th>
+				<th>参数</th>
+				<th>变量</th>
+				<th>备注</th>
+				</tr>
+			<tr>
+				<td>name</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>用户姓名</td>
+				</tr>
+			<tr>
+				<td>id</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>用户ID</td>
+				</tr>
+			<tr>
+				<td>/session/login</td>
+				<td>POST</td>
+				<td>userName,password</td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			<tr>
+				<td>/session/login</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class="important">用户登录界面，前端实现</td>
+				</tr>
+			<tr>
+				<td>/session/logout</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>成功调用success函数，失败返回error函数</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	<div class="d1">
+		<h1>electsysConnector</h1>
+		<div class="d2">
+			<h3>electsysConnector</h3>
+			<table border="1">
+			<tr>
+				<th>name</th>
+				<th>method</th>
+				<th>参数</th>
+				<th>变量</th>
+				<th>备注</th>
+				</tr>
+			<tr>
+				<td>connect()</td>
+				<td></td>
+				<td>studentID,password</td>
+				<td>courses{name,ID,timeBegin,timeEnd}</td>
+				<td>返回用户的课程信息</td>
+				</tr>
+			</table>
+			</div>
+		</div>
+	</body>
+	
